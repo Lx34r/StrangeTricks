@@ -1,4 +1,11 @@
-public class MergeSort {
+public class Merge_sort {
+    /*=========归并排序=========
+	1.申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列
+	2.设定两个指针，最初位置分别为两个已经排序序列的起始位置
+	3.比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置
+	重复步骤3直到某一指针超出序列尾
+	将另一序列剩下的所有元素直接复制到合并序列尾
+	*/
 
     @SuppressWarnings("unchecked")
     public static <T extends Comparable<? super T>> void mergeSort(T[] arr) {
@@ -7,14 +14,13 @@ public class MergeSort {
     }
 
     /**
-     * 
-     * @param arr an array of Comparable items
+     * @param arr      an array of Comparable items
      * @param tmpArray an array to place the merge result
-     * @param left the left-most index of the array
-     * @param right right-most index of the array
+     * @param left     the left-most index of the array
+     * @param right    right-most index of the array
      */
     private static <T extends Comparable<? super T>> void mergeSort(T[] arr,
-            T[] tmpArray, int left, int right) {
+                                                                    T[] tmpArray, int left, int right) {
         if (left < right) {
             int center = (left + right) / 2;
             mergeSort(arr, tmpArray, left, center);
@@ -24,15 +30,14 @@ public class MergeSort {
     }
 
     /**
-     * 
-     * @param arr an array of Comparable items
-     * @param tmpArray an array to place the merge result
-     * @param leftPos the left-most index of the subarray
+     * @param arr      需排序数字（比较大小）的数组
+     * @param tmpArray 放置合并结果的数组
+     * @param leftPos  the left-most index of the subarray
      * @param rightPos the index of the start of the second half
      * @param rightEnd the right-most index of the subarray
      */
     private static <T extends Comparable<? super T>> void merge(T[] arr,
-            T[] tmpArray, int leftPos, int rightPos, int rightEnd) {
+                                                                T[] tmpArray, int leftPos, int rightPos, int rightEnd) {
         int leftEnd = rightPos - 1;
         int numElements = rightEnd - leftPos + 1;
         int tmpPos = leftPos;// 只使用tmpArray中某一部分区域
@@ -54,17 +59,16 @@ public class MergeSort {
 
         /**
          * 复制了整个数组中的所有元素 
-          for(int i = 0; i < tmpArray.length; i++)
-                 arr[i] = tmpArray[i];
+         for(int i = 0; i < tmpArray.length; i++)
+         arr[i] = tmpArray[i];
          */
     }
-    
-    //for test purpose
+
     public static void main(String[] args) {
-        Integer[] arr = {24,13,26,1,2,27,38,15};
+        Integer[] arr = {24, 13, 26, 1, 2, 27, 38, 15};
         System.out.print("Unsorted：");
-        for(int i:arr){
-            System.out.print(i+" ");        
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
         System.out.print("\n  Sorted：");
         mergeSort(arr);

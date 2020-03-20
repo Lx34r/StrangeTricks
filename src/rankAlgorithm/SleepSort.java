@@ -1,4 +1,9 @@
+package rankAlgorithm;
+
 public class SleepSort {
+    /**=========睡眠排序=========
+    利用多线程，把接收的每一个参数分别放在不同的线程里面并在每个线程同时使用sleep函数，sleep的时间就是参数的值
+    */
     public static class sleepThread extends Thread{
         private int time;
         public sleepThread(int time){
