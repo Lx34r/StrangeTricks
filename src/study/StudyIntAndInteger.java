@@ -2,15 +2,9 @@ package study;
 
 import java.io.PrintStream;
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 
-/**
- * @ClassName StudyIntAndInteger
- * @Description TODO Integer拆包封包，重写System.out.println
- * @Author Administrator
- * @Date 2019/7/1 14:49
- * @Version
- */
+//TODO Integer拆包封包，重写System.out.println
+
 public class StudyIntAndInteger {
     public static void main(String[] args) {
 

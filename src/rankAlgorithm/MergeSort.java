@@ -5,8 +5,7 @@ import util.CreatAIntArray;
 import java.util.Arrays;
 
 /*
-* @ClassName MergeSort
-*@Description TODO 归并排序,把一个数组二分形式拆分成最小单位,然后每个最小单位排序,再跟同级单位组合
+* TODO 归并排序,把一个数组二分形式拆分成最小单位,然后每个最小单位排序,再跟同级单位组合
 * */
 public class MergeSort {
     public static void main(String []args){

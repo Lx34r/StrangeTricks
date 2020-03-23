@@ -2,10 +2,8 @@ package rankAlgorithm;
 
 import util.CreatAIntArray;
 
-/**
-* @ClassName BubbleSort
-*@Description TODO 冒泡排序,本节介绍两种写法,一种是从前到后遍历,一种是从后往前遍历
-* */
+//冒泡排序,一种是从前到后遍历,一种是从后往前遍历
+
 public class BubbleSort {
     public static void main(String[] args) {
         //先声明一个数组

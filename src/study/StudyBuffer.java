@@ -2,13 +2,6 @@ package study;
 
 import java.nio.*;
 
-/**
- * @ClassName StudyBuffer
- * @Description TODO
- * @Author Administrator
- * @Date 2019/7/16 15:16
- * @Version
- */
 public class StudyBuffer {
     public static void main(String[] args) {
         //方式1：allocate方式直接分配，内部将隐含的创建一个数组

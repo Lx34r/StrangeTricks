@@ -1,11 +1,11 @@
 package rankAlgorithm;
 
+
 import util.CreatAIntArray;
 
 /**
-* @ClassName InsertSort
-*@Description TODO 插入排序,意思就是比较剩余无序数组的第一位,然后把第一位上的数字拿过来,跟前面的有序数组比较,插入合适的位置
- */
+*TODO 插入排序,意思就是比较剩余无序数组的第一位,然后把第一位上的数字拿过来,跟前面的有序数组比较,插入合适的位置
+ * */
 public class InsertSort {
     public static void main(String[] args) {
         //调用工具包,生成随机数组

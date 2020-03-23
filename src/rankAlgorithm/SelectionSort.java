@@ -1,24 +1,14 @@
-package com.zhrb.rankAlgorithm;
+package rankAlgorithm;
 
 
 import java.util.Scanner;
 
-/*
-* @ClassName SelectionSort
-*@Description TODO 选择排序,简单排序
-*@Author zhangrui
-*@Date 15:31 15:31
-*@Version 
+/**
+* 选择排序,选择排序的核心思想是交换位置,找到数组的最小值放到首位,
+* 然后对除了首位的剩下的数组在此找到最小值放到第二个位置,以此类推
 * */
 public class SelectionSort {
-    /*/**
-    * @author zhangrui
-    * @Description  选择排序的核心思想是交换位置,找到数组的最小值放到首位,
-    * 然后对除了首位的剩下的数组在此找到最小值放到第二个位置,以此类推
-    * @Date 15:57 2018/6/4
-    * @Param [args]
-    * @returu void
-    **/
+
     public static void main(String[] args) {
         //先生成动态生成数组的长度
         int arrayLength = creatArrayLength();
@@ -34,14 +24,18 @@ public class SelectionSort {
                 System.out.println("---------结束排序-------");
         }
     }
-    /*/**
-    * @author zhangrui
-    * @Description  选择排序
-    * @Date 11:22 2018/6/5
-    * @Param [arrayLength] 传入int类型的值,为所要排序的数组的长度
-    * @returu void
-    **/
+
+ 
+    
     public static void simpleSelectSort(int arrayLength){
+        /**
+          * @Description:  选择排序
+          * @Param: [arrayLength]  传入int类型的值,为所要排序的数组的长度
+          * @return: void  
+          * @Author: Lx34r 
+          * @Date: 2020/3/23  
+          */  
+        
         int[] oldArray = new int[arrayLength];
         int random = 0;
         int temoCount = 0;
@@ -99,14 +93,17 @@ public class SelectionSort {
         }
         System.out.println("\n循环排序的次数为:"+(flag)+"次.");
     }
-    /*/**
-    * @author zhangrui
-    * @Description 设定键盘监听事件,返回值为int类型,输入的为非int类型的话,返回-1,为0的话返回0,为int的话返回一个int值
-    * @Date 11:23 2018/6/5
-    * @Param []
-    * @returu int
-    **/
+
+
     public static int creatArrayLength(){
+        /**
+          * @Description: 设定键盘监听事件,返回值为int类型,输入的为非int类型的话,返回-1,为0的话返回0,为int的话返回一个int值
+          * @Param: []
+          * @return: int
+          * @Author: Lx34r
+          * @Date: 2020/3/23
+          */
+
         //设定键盘监听事件进行数组长度的定义
         System.out.println("-----请输入一个数字------");
         Scanner sc =new Scanner(System.in);

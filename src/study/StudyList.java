@@ -5,13 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Predicate;
 
-/**
- * @ClassName StudyList
- * @Description TODO Study List
- * @Author Administrator
- * @Date 2019/6/27 14:59
- * @Version
- */
+//TODO Study List
+
 public class StudyList {
     public static void main(String[] args) {
         List list = new ArrayList();

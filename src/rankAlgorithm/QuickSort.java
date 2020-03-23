@@ -3,8 +3,7 @@ package rankAlgorithm;
 import util.CreatAIntArray;
 
 /**
-* @ClassName QuickSort
-*@Description TODO 快速排序,QuickSort,找基准点1,然后以这个基准点1为准,找基准点1应该在的位置,
+* TODO 快速排序,QuickSort,找基准点1,然后以这个基准点1为准,找基准点1应该在的位置,
 * TODO 这个位置上,基准点1左面的数都小于这个基准点1,基准点1右面的数都大于这个基准点1.
 * TODO 然后再从基准点1的左面序列找到一个基准点21,在基准点1的右面找到一个基准点22.
 * TODO 然后再次进行找基准点排序,递归,最后得到的就是有序数组

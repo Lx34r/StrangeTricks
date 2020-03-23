@@ -1,15 +1,10 @@
 package study;
 
-import sun.misc.Unsafe;
-
 import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.MappedByteBuffer;
 
-/**
- * @ClassName BufferPut
- * @Description TODO
- */
+
 public class BufferPut {
     public static   void main(String[] args) {
         ByteBuffer buffer = ByteBuffer.allocate(10);

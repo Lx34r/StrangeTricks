@@ -4,8 +4,7 @@ import util.CreatAIntArray;
 import java.util.Arrays;
 
 /**
-*@ClassName BucketSort
-*@Description TODO 桶排序 BucketSort
+* TODO 桶排序 BucketSort
 * TODO 1.首先按照一定的自定义的映射规则,把一个待排序的数组,划分为N个小数组,这些小数组是宏观有序的;
 * TODO 2.然后把每个小数组内部排列有序,这个排列过程使用的是其他的排序,比如快排之类的;
 * TODO 3.最后当把每个小数组都排序好后,把这些小数组按照宏观有序的的顺序组合起来就是有序的大数组.

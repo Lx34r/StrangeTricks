@@ -5,8 +5,7 @@ import util.CreatAIntArray;
 import java.util.Arrays;
 
 /**
-*@ClassName HeapSort
-*@Description TODO 堆排序 思想分为三步:
+* TODO 堆排序 思想分为三步:
 * TODO 1:构造出一个大顶堆,或者小顶堆.
 * TODO 2:将大顶堆/(小顶堆)的堆顶数字跟堆底元素交换位置,然后把堆底元素除去,当成新数组.
 * TODO 3:重复执行第一步和第二步.

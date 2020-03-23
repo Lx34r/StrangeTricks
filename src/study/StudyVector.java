@@ -2,10 +2,6 @@ package study;
 
 import java.util.Vector;
 
-/**
- * @ClassName StudyVector
- * @Description TODO
- */
 public class StudyVector {
     public static void main(String[] args) {
         Vector vector = new Vector();

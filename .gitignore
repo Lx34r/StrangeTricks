@@ -264,3 +264,6 @@ __pycache__/
 .svn
 .git
 /out
+
+# python virtualenv
+/venv

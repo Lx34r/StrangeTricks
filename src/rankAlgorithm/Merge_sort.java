@@ -1,5 +1,7 @@
+package rankAlgorithm;
+
 public class Merge_sort {
-    /*=========归并排序=========
+    /**=========归并排序=========
 	1.申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列
 	2.设定两个指针，最初位置分别为两个已经排序序列的起始位置
 	3.比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置
@@ -7,7 +9,6 @@ public class Merge_sort {
 	将另一序列剩下的所有元素直接复制到合并序列尾
 	*/
 
-    @SuppressWarnings("unchecked")
     public static <T extends Comparable<? super T>> void mergeSort(T[] arr) {
         T[] tmpArray = (T[]) new Comparable[arr.length];
         mergeSort(arr, tmpArray, 0, arr.length - 1);
@@ -19,6 +20,7 @@ public class Merge_sort {
      * @param left     the left-most index of the array
      * @param right    right-most index of the array
      */
+
     private static <T extends Comparable<? super T>> void mergeSort(T[] arr,
                                                                     T[] tmpArray, int left, int right) {
         if (left < right) {

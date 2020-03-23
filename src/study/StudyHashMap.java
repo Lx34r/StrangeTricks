@@ -1,23 +1,14 @@
 package study;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-import java.io.Serializable;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.BiConsumer;
 
-/**
- * @ClassName StudyHashMap
- * @Description TODO Read hash map resource base on Jdk1.8
- * @Author Administrator
- * @Date 2019/6/26 9:44
- * @Version
- */
+//TODO Read hash map resource base on Jdk1.8
+
 public class StudyHashMap {
     public static void main(String[] args) {
+
         Map<Object, Object> map = new HashMap<>(8);
         map.put("name", "RebornChang");
         map.put("gender", "男");

@@ -4,13 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * @ClassName StudyConcurrentHashMap
- * @Description TODO
- * @Author Administrator
- * @Date 2019/7/2 10:25
- * @Version
- */
+
 public class StudyConcurrentHashMap {
 
     private Map<Integer,Integer> cache =new ConcurrentHashMap<>(15);
