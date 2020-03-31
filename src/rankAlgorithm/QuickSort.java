@@ -28,13 +28,7 @@ public class QuickSort {
         }
         System.out.println("\n_______________________________________________________");
     }
-    /*/**
-    * @author zhangrui
-    * @Description //因为是递归,所以另写一个方法,然后以备递归调用
-    * @Date 11:19 2018/6/7
-    * @Param [tempArray, index, end]
-    * @returu void
-    **/
+
     public static void quickSort(int []tempArray,int index,int end){
         //开始使用快速排序对随机生成的数组进行排序
         //第一步找基准点1,定义第一个数为基准点1

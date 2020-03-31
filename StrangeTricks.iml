@@ -14,5 +14,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="ganymed-ssh2-build210" level="project" />
+    <orderEntry type="library" name="Python 3.8 (StrangeTricks) interpreter library" level="application" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
   </component>
 </module>

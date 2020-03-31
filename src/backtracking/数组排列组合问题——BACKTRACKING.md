@@ -1,5 +1,4 @@
 ## <font size=4> **`0x000`** </font> <font size=4> **BACKTRACKING** </font>
-
 backtracking（回溯法）是一类递归算法，通常用于解决某类问题：要求找出答案空间中**符合某种特定要求**的答案，比如[eight queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle)（将国际象棋的八个皇后排布在8x8的棋盘中，使她们不能互相威胁）。回溯法会增量性地找寻答案，每次只构建答案的一部分，在构建的过程中如果意识到答案不符合要求，会立刻将这一部分答案及它的所有子答案抛弃，以提高效率。
 
 回溯法的核心模型是一个**决策树**，每个节点的子节点代表该节点的选项。从根节点出发，作出某种选择达到节点A，随后会面临节点A的选项，重复这个过程直到达到叶节点。如果途中发现某节点B的状态已经不符合要求，那么弃掉以B为根节点的子决策树。
@@ -29,7 +28,6 @@ backtracking（回溯法）是一类递归算法，通常用于解决某类问�
 
 
 ## <font size=4> **`0x001`** </font> <font size=4> **问题集** </font>
-
 1. [subsets](https://leetcode.com/problems/subsets/description/): 给出一个不含重复元素的数组，返回它的所有子集；
 2. [subsets w/ duplicates](https://leetcode.com/problems/subsets-ii/description/): 给出一个含有重复元素的数组，返回它的所有子集，不准重复；
 3. [permutations](https://leetcode.com/problems/permutations/description/): 给出一个不含重复元素的数组，返回它的所有排列；
@@ -40,7 +38,6 @@ backtracking（回溯法）是一类递归算法，通常用于解决某类问�
 
 
 ## <font size=4> **`0x002`** </font> <font size=4> **决策树** </font>
-
 决策树的设计是回溯法的关键。对于排列组合问题，这一步的本质是将intuitional的想法映射到解题空间，变化为决策树每一个节点的选项。
 
 注意，决策树并不是一个具体存在的数据结构。在回溯法中，决策树代表方法递归调用的方式和顺序，每一个节点的选项实际上编写在代码逻辑中，比如用一个for循环以某种逻辑遍历数组，并在每次的iteration中递归调用方法，这个过程相当于对某一个选项作出了选择。而退出到上一层方法则相当于回溯到决策树的上一个节点。
@@ -87,7 +84,6 @@ combination问题与subset同为组合性质的问题，所以解法类似。在
 
 
 ## <font size=4> **`0x003`** </font> <font size=4> **实现** </font>
-
 首先记住回溯法的一般普遍实现，对于不同的问题只要往这个框框上套即可。
 
 ```
